@@ -37,12 +37,24 @@ namespace T1
         
         private void truckButton_Click(object sender, RoutedEventArgs e)
         {
+            /*
+            // aloittelijakoodi
             // get TextBlock value
-            string text = truckTextBlock.Text;
+            string text = truckTextBlock.Text; // "0"
             // set TextBlock value
             int trucknum = int.Parse(text);
             trucknum++;
             truckTextBlock.Text = trucknum.ToString();
+            */
+
+            //prokoodi
+            // "0" -> 0
+            int trucks = int.Parse(truckTextBlock.Text);
+            // 0 -> 1
+            trucks++;
+            // 1-> "1"
+            truckTextBlock.Text = trucks.ToString();
+
         }
 
         private void carButton_Click(object sender, RoutedEventArgs e)
